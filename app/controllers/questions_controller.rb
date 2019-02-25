@@ -1,10 +1,10 @@
 class QuestionsController < ApplicationController
   def ask
-    @question = params["question"]
+    @question = params[:question]
   end
 
   def answer
-    @question = params["question"]
+    @question = params[:question]
     if @question == 'I am going to work'
       then @answer = 'Great!'
     elsif @question[-1] == '?'
